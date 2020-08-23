@@ -6,39 +6,38 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Card Design</title>
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,700;1,300&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="css/normalize.css">
+    <link href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css" rel="stylesheet">
     <link rel="stylesheet" href="css/app.css">
-    <script src="https://use.fontawesome.com/a91114788d.js"></script>
 </head>
-<body>
+<body class="flex justify-center items-center">
     
-    <div class="card">
+    <div class="card flex rounded">
 
         <!-- Left side -->
-        <div class="card-left">
-            <a href="#" class="card-skill-button">PHP</a>
+        <div class="card-left py-3 px-5 rounded flex flex-col justify-between items-center text-center text-white">
+            <a href="#" class="card-skill-button text-sm py-.8 rounded-full px-6 no-underline">PHP</a>
 
             <img src="https://cdn1.iconfinder.com/data/icons/relief-chemistry-lab-equipment-glyph/32/laboratory-apparatus-erlenmeyer-bottle-chemistry-liquid-scale-volimetric-flask-512.png"/>
 
-            <span class="card-level">Intermediate Difficulty</span>
+            <span class="text-sm">Intermediate Difficulty</span>
         </div>
 
         <!-- Right side -->
-        <div class="card-right">
+        <div class="card-right py-3 px-5 flex flex-col text-gray-700">
 
-            <h3 class="card-title">
-                <a href="#">Testing Jargon</a>
+            <h3 class="card-title text-black text-3xl font-medium mt-0 mb-2">
+                <a href="#" class="no-underline">Testing Jargon</a>
             </h3>
 
-            <p class="card-excerpt">
+            <p class="flex-1">
                 There is no two ways about it: terminology in the testing world is incredibly overwhelming.
                 Let's fix that! Bit by bit, we'll break all of these confusing concepts down as best as we can.
             </p>
 
-            <div class="card-meta">
-                <div><img src="https://img.icons8.com/metro/16/000000/book.png"/>5&nbsp;Lessons</div>
+            <div class="text-sm flex">
+                <div class="flex align-center mr-4"><img src="https://img.icons8.com/metro/16/000000/book.png" class="mr-2"/>5&nbsp;Lessons</div>
 
-                <div><img src="https://img.icons8.com/android/16/000000/clock.png"/>53:10&nbsp;mins</div>
+                <div class="flex align-center"><img src="https://img.icons8.com/android/16/000000/clock.png" class="mr-2"/>53:10&nbsp;mins</div>
             </div>
         </div>
 
